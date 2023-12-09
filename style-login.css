@@ -1,0 +1,90 @@
+body{
+    background-color: #1b1b32;
+    margin: 0;
+    font-size: 15px;
+}
+
+div{
+    width: 500px;
+    height: 300px;
+    border: black;
+    margin: 50px auto 10px auto;
+    box-shadow: 2px 2px 8px orange;
+    border-radius: 5px;
+    background-color: aqua;
+    
+}
+
+form{
+    width: 60vw;
+    max-width: 450px;
+    min-width: 250px;
+    margin: auto;
+    padding-bottom: 2em;
+    height: 320;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(51, 50, 50);
+    transform: translateY(17px);
+
+}
+
+fieldset{
+    height: 220px;
+    width: 55vw;
+    border-radius: 5px;
+    transform: translateY(10px);
+    margin: auto;
+    max-width: 400px;
+    min-width: 250px;
+    border: none;    
+}
+
+legend{
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    font-display: center;
+    align-self: center;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+p{  
+    margin: 0px;
+    font-size: 12px;
+}
+
+.diseño_input{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 1.6em;
+    border-radius: 5px;
+    border: 0.5px solid grey;
+
+}
+
+.diseño_input:hover{
+    box-shadow: 2px 2px 8px orange;
+    background-color: rgb(242, 242, 242);
+}
+
+button:hover{
+    box-shadow: 2px 2px 8px orange;
+    background-color: rgb(242, 242, 242);
+    border: none;
+}
+
+input[type="checkbox"]{
+    width: none;
+        
+}
+
+.inline{
+    width: unset;
+    margin: 0 0.5rem 0 0;
+    vertical-align: middle;
+}
+
+

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inicio Sesión</title>
+        <link rel="stylesheet" href="style-login.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="principal">
+            <form id="formulario-login">
+                <fieldset>
+                    <legend>Inicio de Sesión</legend>
+                    
+                    <label for="user" id="usuario"> Usuario
+                        <input class="diseño_input" type="text" name="user" id="name" placeholder="Ingresa Usuario" required >
+                    </label>
+
+                    <label for="password" id="contraseña" > Contraseña
+                        <input class="diseño_input" type="password" name="password" id="password" placeholder="Ingresa contraseña" required >
+                    </label>
+
+                    <input class="inline" type="checkbox" name="remember" id="remember" checked> 
+                    <label class="inline" for="remember" id="recordar"><p>Recordar mi usuario</p></label>
+
+                    <button class="inline" type="submit" id="login-butom">Iniciar</button>
+
+                    <button class="inline" type="reset" id="cancelar">Restablecer</button>
+                    
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

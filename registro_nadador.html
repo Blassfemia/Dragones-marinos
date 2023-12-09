@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>MED Registro</title>
+    <link rel="stylesheet" href="style_registro_usuarios.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <header class="menu_top style">
+      <div class="top sel1">Inicio</div>
+      <div class="top sel2">Registro</div>
+      <div class="top sel3">Nadador</div>
+      <div class="top sel4">Agenda</div>
+      <div class="top sel5">Paquetes</div>
+      <div class="top sel6">Profesor</div>
+      <div class="top sel7">Otros</div>           
+    </header>
+
+    <h1>Formulario de registro</h1>
+    <p>Ingrese la información requerida</p>
+
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <legend>REGISTRO NADADOR</legend>
+
+        <label for="nombre">Nombre: <input id="nombre" name="nombre" type="text" required /></label>
+        <label for="apellido">Apellido: <input id="apellido" name="apellido" type="text" required /></label>
+        <label for="referrer1">Tipo de documento 
+            <select id="referrer1" name="referrer1">
+              <option value="">(Selecciona uno)</option>
+              <option value="1">Cedula Ciudadania</option>
+              <option value="2">Tarjeta de identidad</option>
+              <option value="3">Pasaporte</option>
+            </select>
+        </label>
+        <label for="documento">Documento: <input id="documento" name="documento" type="text" required /></label>
+        <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+        <label for="acudiente">Acudiente: <input id="acudiente" name="acudiente" type="text" required /></label>
+        <label for="tel_acudiente">Telefono Acudiente: <input id="tel_acudiente" name="tel_acudiente" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} required /></label>
+      </fieldset>
+        <label for="foto_perfil">Foto de perfil: <input id="foto_perfil" type="file" name="file" /></label>
+        <label for="edad">Edad (Años): <input id="edad" type="number" name="edad" min="1" max="120" /></label>
+        <label for="referrer">Nivel de Habilidad
+          <select id="referrer" name="referrer">
+            <option value="">(selecciona uno)</option>
+            <option value="1">Dragon amarillo</option>
+            <option value="2">Dragon naranja</option>
+            <option value="3">Dragon rojo</option>
+            <option value="4">Dragon verde</option>
+            <option value="5">Dragon azul</option>
+          </select>
+        </label>
+        <label for="nota">Notas adicionales:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Indique informacion adicional..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terminos_condiciones">
+        <input class="inline" id="terminos_condiciones" type="checkbox" required name="terminos_condiciones" /> Acepto <a href="#">terminos y condiciones</a>
+      </label>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
